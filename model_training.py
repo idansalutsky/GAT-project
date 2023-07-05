@@ -81,7 +81,7 @@ def train(model, data):
     """Train a GNN model and return the trained model."""
     criterion = torch.nn.NLLLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
-    epochs = 450
+    epochs = 300
     best_acc = 0
 
     model.train()
